@@ -13,10 +13,10 @@ import { EmployeeBucketService } from './services/employee-bucket.service';
     CommonModule,
     EmployeeRoutingModule,
     SharedModule
-  ]
+  ],
+  providers: [{
+    provide: BucketService,
+    useClass: EmployeeBucketService
+  }]
 })
-providers: [{
-  provide: BucketService,
-  useClass: EmployeeBucketService
-}]
 export class EmployeeModule { }
