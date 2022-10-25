@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { SocialCardType } from './constants/social-card-type';
 import { trigger, state, style, animate, transition, group} from '@angular/animations';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
